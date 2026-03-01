@@ -1,0 +1,44 @@
+# ====================== 项目专属过滤（微信自动回复） ======================
+# 过滤所有截图文件（匹配你的截图前缀）
+test_small_area_*.png
+wechat_screenshot_*.png
+chat_screenshot_*.png
+ai_reply_screenshot_*.png
+
+# 环境变量文件（存放API Key等敏感信息）
+.env
+.env.local
+.env.*
+
+# ====================== Python通用过滤 ======================
+# 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境（如果用了venv/conda）
+venv/
+env/
+*.env
+.conda
+
+# 日志文件
+*.log
+logs/
+
+# ====================== 系统通用过滤 ======================
+# Windows系统文件
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store  # Mac系统文件
+
+# IDE配置文件（如果用PyCharm/VSC）
+.idea/
+.vscode/
+*.swp
+*.swo
